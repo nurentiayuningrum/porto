@@ -108,6 +108,10 @@ section .section-title {
     height : 200px;
     width : 100%;
     object-fit : cover;
+    
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 10px;
 }
 
 @media screen and (max-width: 768px) {
@@ -131,4 +135,11 @@ section .section-title {
 
 .skills-section .progress-bar .progress{
     background-color : var(--primary-color);
+}
+
+
+    @media (max-width: 768px) {
+    h1 {
+        font-size: 24px; /* Atur agar lebih kecil di layar kecil */
+    }
 }
