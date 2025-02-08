@@ -108,7 +108,7 @@ section .section-title {
     height : 200px;
     width : 100%;
     object-fit : cover;
-    
+/*     REVISI */
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 10px;
@@ -137,9 +137,16 @@ section .section-title {
     background-color : var(--primary-color);
 }
 
-
+/* REVISI */
     @media (max-width: 768px) {
     h1 {
         font-size: 24px; /* Atur agar lebih kecil di layar kecil */
+    }
+}
+
+    /* Mobile Phone */
+@media (max-width: 450px){
+    html {
+        font-size: 55%;
     }
 }
