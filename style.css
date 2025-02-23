@@ -104,15 +104,31 @@ section .section-title {
 
 /* PORTOFOLIO */
 
-.portofolio-section .card .card-img-top {
+    .portofolio-section .card .card-img-top {
+    width: 100%;  /* Pastikan gambar memenuhi lebar container */
+    height: 180px; /* Atur tinggi gambar agar seragam */
+    max-height: 200px; /* Batasi tinggi maksimum */
+    object-fit: cover; /* Pangkas gambar agar tetap proporsional */
+    border-radius: 10px; /* Tambahkan efek sudut lembut */
+}
+
+/* Khusus untuk tampilan mobile */
+@media (max-width: 768px) { 
+    .portofolio-section .card .card-img-top {
+        height: 150px; /* Kurangi tinggi gambar di mobile agar lebih seimbang */
+    }
+}
+
+
+/* .portofolio-section .card .card-img-top {
     height : 200px;
     width : 100%;
     object-fit : cover;
 /*     REVISI */
-    display: grid;
+/*     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 10px;
-}
+} */ 
 
 @media screen and (max-width: 768px) {
     .portofolio-section .card .card-img-top {
