@@ -359,13 +359,14 @@
                 </div>
 
                 <div class="col-md-5">
-                    <form action="#">
+                    <form action="https://formspree.io/f/mnnjyavl" method="POST">
                         <input 
                             type="text" 
                             name="name" 
                             id="name"
                             placeholder="Name"
                             class="form-control rounded-0 mb-2"
+                            required
                         />
                         <input 
                             type="email" 
@@ -373,6 +374,7 @@
                             id="email"
                             placeholder="Email"
                             class="form-control rounded-0 mb-2"
+                            required
                         />
                         <textarea 
                             name="body" 
@@ -381,9 +383,10 @@
                             cols="30" 
                             rows="3" 
                             class="form-control rounded-0 mb-3">
+                            required
                         </textarea>
 
-                        <button class="btn btn-orange w-100 rounded-0">Submit</button>
+                        <button type="submit" class="btn btn-orange w-100 rounded-0">Submit</button>
                     </form>
                 </div>
             </div>
@@ -452,6 +455,24 @@
           },
         });
       </script> -->
-    
+    <script>
+    const form = document.querySelector("form");
+    form.addEventListener("submit", async (e) => {
+        e.preventDefault();
+        const formData = new FormData(form);
+        const response = await fetch(form.action, {
+            method: form.method,
+            body: formData,
+            headers: { 'Accept': 'application/json' }
+        });
+        if (response.ok) {
+            alert("Pesan berhasil dikirim!"); // Gantilah dengan modal jika perlu
+            form.reset();
+        } else {
+            alert("Terjadi kesalahan, coba lagi.");
+        }
+    });
+</script>
+
 </body>
 </html>
