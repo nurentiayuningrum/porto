@@ -122,7 +122,7 @@
                         <div class="card-body">
                             <img src="img/porto3.png" alt="" class="card-img-top rounded mb-3">
                             <h6 class="fw-semibold">Kopi Sewindu</h6>
-                            <p class="text-secondary fs-7">Website Kopi Sewindu menghadirkan pengalaman ngopi yang lebih dekat dengan informasi toko, menu favorit, lokasi, dan kontak, serta fitur komentar untuk berbagi kesan.</p>
+                            <p class="text-secondary fs-7">Website Kopi Sewindu menghadirkan pengalaman ngopi yang lebih dekat dan mudah diakses. Menyajikan informasi lengkap tentang toko, menu spesial, lokasi, kontak yang memudahkan pelanggan, juga fitur komentar untuk berbagi ulasan dan rekomendasi.</p>
                             <a href="https://nurentiayuningrum.github.io/Kopi-Sewindu/" class="text-orange">Detail Portofolio</a>
                         </div>
                     </div>
@@ -132,7 +132,7 @@
                         <div class="card-body">
                             <img src="img/porto1.png" alt="" class="card-img-top rounded mb-3">
                             <h6 class="fw-semibold">GoSchoot Rental</h6>
-                            <p class="text-secondary fs-7">Website Gooschoot Rental menghadirkan layanan sewa terbaik dengan informasi lengkap tentang produk, lokasi, dan kontak, serta fitur komentar untuk ulasan pelanggan.</p>
+                            <p class="text-secondary fs-7">Website Gooschoot Rental menghadirkan layanan sewa terbaik yang mudah diakses, dengan informasi lengkap tentang produk, berbagai lokasi penyawaan, kontak untuk memudahkan pelanggan, serta dilengkapi fitur komentar untuk ulasan pelanggan.</p>
                             <a href="https://nurentiayuningrum.github.io/GoScoot/" class="text-orange">Detail Portofolio</a>
                         </div>
                     </div>
@@ -142,7 +142,7 @@
                         <div class="card-body">
                             <img src="img/porto4.png" alt="" class="card-img-top rounded mb-3">
                             <h6 class="fw-semibold">Perpustakaan Kita</h6>
-                            <p class="text-secondary fs-7">Website Perpustakaan Kita menawarkan akses mudah ke koleksi buku terbaik, informasi perpustakaan, serta kemitraan eksklusif, dengan koneksi langsung ke media sosial untuk pengalaman membaca yang lebih interaktif.</p>
+                            <p class="text-secondary fs-7">Website Perpustakaan Kita, menawarkan akses mudah ke koleksi buku terbaik, informasi perpustakaan, serta kemitraan eksklusif, dengan koneksi langsung ke media sosial untuk membagikan pengalaman membaca yang lebih interaktif.</p>
                             <a href="https://nurentiayuningrum.github.io/PerpustakaanKita/" class="text-orange">Detail Portofolio</a>
                         </div>
                     </div>
@@ -402,6 +402,35 @@
     <script src="vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
+    var swiper = new Swiper(".portofolio-swiper", {
+        slidesPerView: 3,  // Default untuk desktop
+        spaceBetween: 30,
+        navigation: {
+            nextEl: ".btn-next",
+            prevEl: ".btn-prev",
+        },
+        breakpoints: {
+            320: {  // Mobile kecil
+                slidesPerView: 1,
+                spaceBetween: 10
+            },
+            480: {  // Mobile besar
+                slidesPerView: 1,
+                spaceBetween: 20
+            },
+            768: {  // Tablet
+                slidesPerView: 2,
+                spaceBetween: 30
+            },
+            1024: {  // Desktop
+                slidesPerView: 3,
+                spaceBetween: 40
+            }
+        }
+    });
+</script>
+
+<!--     <script>
         var swiper = new Swiper(".portofolio-swiper", {
           slidesPerView: 3,
           spaceBetween: 30,
@@ -422,7 +451,7 @@
             },
           },
         });
-      </script>
+      </script> -->
     
 </body>
 </html>
