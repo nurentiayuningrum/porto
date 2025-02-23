@@ -103,6 +103,26 @@ section .section-title {
 }
 
 /* PORTOFOLIO */
+    
+    /* Pastikan semua card memiliki tinggi yang sama */
+.portofolio-section .card {
+    display: flex;
+    flex-direction: column;
+    height: 100%; /* Semua card akan memiliki tinggi yang sama */
+}
+
+/* Pastikan teks tidak melebihi batas card */
+.portofolio-section .card-body {
+    flex-grow: 1; /* Mengisi ruang yang tersedia agar semua card seragam */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Supaya tombol "Detail Portofolio" tetap di bawah */
+.portofolio-section .card-body a {
+    margin-top: auto; /* Menempatkan link ke bawah */
+}
+
 
  .portofolio-section .card .card-img-top {
     height : 200px;
