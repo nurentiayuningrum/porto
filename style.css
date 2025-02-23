@@ -141,11 +141,37 @@ section .section-title {
 }
 
 /* SKILLS */
+
+.skills-section {
+    padding: 50px 0;
+}
+
+.skill-item {
+    margin-bottom: 15px;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 8px;
+    background-color : var(--gray-color);
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+}
+
+.progress-bar .progress {
+    display: block;
+    height: 100%;
+    background-color : var(--primary-color);
+    border-radius: 5px;
+}
+    
+    
 .skills-section, footer {
     background-color : #030304;
 
 }
-
+/* 
 .skills-section .progress-bar {
     width : 100%;
     height : 10px;
@@ -156,7 +182,7 @@ section .section-title {
 .skills-section .progress-bar .progress{
     background-color : var(--primary-color);
 }
-
+ */
 /* REVISI */
     @media (max-width: 768px) {
     h1 {
