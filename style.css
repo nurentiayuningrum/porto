@@ -104,32 +104,15 @@ section .section-title {
 
 /* PORTOFOLIO */
 
-.portofolio-section .card .card-img-top {
-    width: 100%;
-    height: auto; /* Biarkan tinggi menyesuaikan proporsi gambar */
-    object-fit: contain; /* Pastikan seluruh gambar terlihat tanpa dipotong */
-    border-radius: 10px; /* Opsional: Membuat sudut lebih lembut */
-}
-
-/* Jika ingin ukuran lebih spesifik untuk mobile */
-@media (max-width: 768px) {
-    .portofolio-section .card .card-img-top {
-        height: auto; /* Biarkan gambar menyesuaikan */
-        max-height: 250px; /* Batasi tinggi maksimum agar tidak terlalu besar */
-        object-fit: contain; /* Pastikan gambar tidak terpotong */
-    }
-}
-
-
-/* .portofolio-section .card .card-img-top {
+ .portofolio-section .card .card-img-top {
     height : 200px;
     width : 100%;
     object-fit : cover;
 /*     REVISI */
-/*     display: grid;
+     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 10px;
-} */ 
+} 
 
 @media screen and (max-width: 768px) {
     .portofolio-section .card .card-img-top {
